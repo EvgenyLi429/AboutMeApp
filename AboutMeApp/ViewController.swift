@@ -12,23 +12,20 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
        
     }
-    /*peredai imya na welcomeview
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
-    }
-     */
-    
-    @IBAction func loginButton() {
-        // if pressed, checks username and pass
-        // if true = open welcomeview else error.alert
-        guard userNameTextField.text == user && passwordTextField.text == password else {
-            
-        }
-        
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
+    }
+    
+    @IBAction func loginButton() {
+        if userNameTextField.text == user && passwordTextField.text == password {
+            performSegue(withIdentifier: "WelcomeViewController", sender: self)
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Invalid username or password", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -39,16 +36,24 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func forgotUserName() {
-        //alert username
-        UIAlertAction(
-            title: "Ya name is:\(user)", style: UIAlertAction.Style)
+        let alert = UIAlertController(title: "Forgot Username?", message: "Your username is \(user)", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func fogotPassword() {
-        //alert password
-        UIAlertAction(title: "Ya password is:\(password)")
+        let alert = UIAlertController(title: "Forgot Password?", message: "Your password is \(password)", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+
     }
     
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        
+    }
     
     
     

@@ -46,7 +46,7 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
                                             <action selector="loginButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Te-RN-75S"/>
-                                            <segue destination="PGu-3Z-ycr" kind="show" id="uVv-zL-xIv"/>
+                                            <segue destination="PGu-3Z-ycr" kind="show" identifier="WelcomeViewController" id="uVv-zL-xIv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -97,7 +97,7 @@
         <!--WelcomeViewController-->
         <scene sceneID="2UT-bf-ECX">
             <objects>
-                <viewController title="WelcomeViewController" modalPresentationStyle="fullScreen" id="PGu-3Z-ycr" customClass="WelcomeViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" title="WelcomeViewController" modalPresentationStyle="fullScreen" id="PGu-3Z-ycr" customClass="WelcomeViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H3Y-Uj-X6d" customClass="view">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,6 +125,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Og8-qx-Yac"/>
+                    <connections>
+                        <outlet property="LogoutButton" destination="Xpk-G6-hAE" id="vSB-i0-m1s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28d-Xu-qet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
