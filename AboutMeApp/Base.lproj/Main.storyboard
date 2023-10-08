@@ -106,6 +106,9 @@
                                 <rect key="frame" x="157.66666666666666" y="552" width="77.666666666666657" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <segue destination="Iyt-MT-VyP" kind="unwind" unwindAction="unwindFor:" id="Jhy-cY-g4k"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="935-dk-NqB">
                                 <rect key="frame" x="140" y="257" width="113" height="34"/>
@@ -130,6 +133,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28d-Xu-qet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Iyt-MT-VyP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="830" y="-2"/>
         </scene>
