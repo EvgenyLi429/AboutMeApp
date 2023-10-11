@@ -13,11 +13,11 @@
 		9B64FEA92AD1AFD10073322E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B64FEA72AD1AFD10073322E /* Main.storyboard */; };
 		9B64FEAB2AD1AFD30073322E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B64FEAA2AD1AFD30073322E /* Assets.xcassets */; };
 		9B64FEAE2AD1AFD30073322E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B64FEAC2AD1AFD30073322E /* LaunchScreen.storyboard */; };
-		9BB35D9D2AD2BD4A0044F851 /* UserMainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB35D9C2AD2BD4A0044F851 /* UserMainScreenViewController.swift */; };
 		9BB35D9F2AD2CB5A0044F851 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB35D9E2AD2CB5A0044F851 /* WelcomeViewController.swift */; };
 		9BDBA9262AD6B5C3005067C3 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBA9252AD6B5C3005067C3 /* user.swift */; };
 		9BDBA92F2AD6CBF0005067C3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBA92E2AD6CBF0005067C3 /* AboutViewController.swift */; };
 		9BDBA9312AD6CC26005067C3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBA9302AD6CC26005067C3 /* ProfileViewController.swift */; };
+		9BDBA9332AD72173005067C3 /* gradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDBA9322AD72173005067C3 /* gradientColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +29,11 @@
 		9B64FEAA2AD1AFD30073322E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B64FEAD2AD1AFD30073322E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B64FEAF2AD1AFD30073322E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BB35D9C2AD2BD4A0044F851 /* UserMainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainScreenViewController.swift; sourceTree = "<group>"; };
 		9BB35D9E2AD2CB5A0044F851 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9BDBA9252AD6B5C3005067C3 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		9BDBA92E2AD6CBF0005067C3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9BDBA9302AD6CC26005067C3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9BDBA9322AD72173005067C3 /* gradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradientColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,6 @@
 		9B5C40ED2AD5F01F009E2F3C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9BB35D9C2AD2BD4A0044F851 /* UserMainScreenViewController.swift */,
 				9BB35D9E2AD2CB5A0044F851 /* WelcomeViewController.swift */,
 				9B64FEA52AD1AFD10073322E /* LoginViewController.swift */,
 				9BDBA9302AD6CC26005067C3 /* ProfileViewController.swift */,
@@ -118,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9BDBA9252AD6B5C3005067C3 /* user.swift */,
+				9BDBA9322AD72173005067C3 /* gradientColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,12 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BB35D9D2AD2BD4A0044F851 /* UserMainScreenViewController.swift in Sources */,
 				9BB35D9F2AD2CB5A0044F851 /* WelcomeViewController.swift in Sources */,
 				9BDBA9262AD6B5C3005067C3 /* user.swift in Sources */,
 				9BDBA92F2AD6CBF0005067C3 /* AboutViewController.swift in Sources */,
 				9B64FEA62AD1AFD10073322E /* LoginViewController.swift in Sources */,
 				9B64FEA22AD1AFD10073322E /* AppDelegate.swift in Sources */,
+				9BDBA9332AD72173005067C3 /* gradientColor.swift in Sources */,
 				9BDBA9312AD6CC26005067C3 /* ProfileViewController.swift in Sources */,
 				9B64FEA42AD1AFD10073322E /* SceneDelegate.swift in Sources */,
 			);

@@ -22,8 +22,7 @@ final class LoginViewController: UIViewController {
     
     //MARK: LOGINBUTTON
     @IBAction func loginButtonPressed() {
-        guard userNameTextField.text == user,
-              passwordTextField.text == password else {
+        guard userNameTextField.text == user, passwordTextField.text == password else {
             showAlert(
                 title: "Error",
                 message: "Invalid username or password",
@@ -47,7 +46,7 @@ final class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
-    //MARK: PRIVATE METHODS
+    //MARK: PRIVATE METHODS, ALERTS
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(
             title: title,
